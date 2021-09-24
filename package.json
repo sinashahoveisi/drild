@@ -2,8 +2,9 @@
   "name": "drilld",
   "version": "1.0.0",
   "description": "The best DrillDown package for react",
-  "author": "sinashahoveisi",
-  "license": "",
+  "author": "sinaShahoveisi & mohammadNickzad",
+  "private": false,
+  "license": "MIT",
   "repository": "sinashahoveisi/drilld",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -59,5 +60,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "keywords": ["react", "components", "drillDown", "drilldown", "react-drilldown", "nested object", "nested modal", "modal"]
 }
