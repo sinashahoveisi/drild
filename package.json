@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The best DrillDown package for react",
   "author": "sinashahoveisi",
-  "license": "",
+  "license": "MIT",
   "repository": "sinashahoveisi/drilld",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
