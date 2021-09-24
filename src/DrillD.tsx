@@ -1,9 +1,7 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
 const DrillD: FC = () => {
-  return (
-    <div>sina</div>
-  )
+  return <div className='counter'>sina</div>;
 }
 
 export default DrillD;

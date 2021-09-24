@@ -1,4 +1,4 @@
-# drilld
+# DrillD
 
 > The best DrillDown package for react
 
