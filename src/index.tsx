@@ -1,5 +1,5 @@
-import DrillD from './DrillD';
+import DrillD from 'DrillD';
 
-import './assets/styles.scss';
+import 'assets/styles.scss';
 
 export default DrillD;
