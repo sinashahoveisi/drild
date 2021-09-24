@@ -1,10 +1,8 @@
 import React from 'react'
-
-import { ExampleComponent } from 'drilld'
-import 'drilld/dist/index.css'
+import DrillD from 'drilld'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <DrillD />
 }
 
 export default App

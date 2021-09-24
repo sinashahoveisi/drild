@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import drilld from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(drilld).toBeTruthy()
   })
 })

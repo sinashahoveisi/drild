@@ -1,34 +1,95 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "extends": [
-    "standard",
-    "standard-react",
-    "plugin:prettier/recommended",
-    "prettier/standard",
-    "prettier/react",
-    "plugin:@typescript-eslint/eslint-recommended"
-  ],
   "env": {
-    "node": true
+    "browser": true,
+    "es6": true
   },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "legacyDecorators": true,
       "jsx": true
-    }
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "ignorePatterns" : ["serviceWorker.ts"],
   "settings": {
-    "react": {
-      "version": "16"
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
     }
   },
   "rules": {
-    "space-before-function-paren": 0,
-    "react/prop-types": 0,
-    "react/jsx-handler-names": 0,
-    "react/jsx-fragments": 0,
-    "react/no-unused-prop-types": 0,
-    "import/export": 0
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "strict": ["error", "safe"],
+    "no-debugger": "error",
+    "brace-style": [ "error", "1tbs", { "allowSingleLine": true  } ],
+    "no-trailing-spaces": "error",
+    "keyword-spacing": "error",
+    "spaced-comment": ["error", "always"],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "vars-on-top": "error",
+    "max-len": "off",
+    "no-undefined": "off",
+    "comma-dangle": ["error", "never"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "guard-for-in": "error",
+    "no-eval": "error",
+    "no-with": "error",
+    "valid-typeof": "error",
+    "camelcase": "off",
+    "jsx-a11y/media-has-caption": "off",
+    "no-undef": "off",
+    "prettier/prettier": "error",
+    "prefer-promise-reject-errors": "off",
+    "eqeqeq": "warn",
+    "no-nested-ternary": "off",
+    "no-await-in-loop": "off",
+    "react/no-array-index-key": "off",
+    "react/destructuring-assignment": "off",
+    "react/require-default-props": "off",
+    "no-unused-vars": "warn",
+    "no-continue": "warn",
+    "no-plusplus": "off",
+    "no-underscore-dangle": "off",
+    "no-useless-escape": "warn",
+    "global-require": "off",
+    "no-tabs": "off",
+    "no-static-element-interactions": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-param-reassign": "off",
+    "no-extra-semi": "warn",
+    "no-unreachable": "warn",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "array-callback-return" : "off",
+    "no-shadow" : "off",
+    "consistent-return" : "off",
+    "react/prefer-es6-class": "warn",
+    "react/jsx-boolean-value": "warn",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/prop-types": "off",
+    "react-redux/mapDispatchToProps-returns-object": "off",
+    "react-redux/prefer-separate-component-file": "off",
+    "css-modules/no-undef-class": "off"
   }
 }

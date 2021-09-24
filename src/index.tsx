@@ -1,10 +1,5 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import DrillD from './DrillD';
 
-interface Props {
-  text: string
-}
+import './assets/styles.scss';
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default DrillD;
