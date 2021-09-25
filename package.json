@@ -26,19 +26,18 @@
     "update": "npx ncu -u && yarn install"
   },
   "peerDependencies": {
-    "react": "^17.0.2"
+    "react": "^>=16.0.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.0",
     "@testing-library/user-event": "^13.2.1",
     "@types/jest": "^27.0.2",
+    "@types/lodash": "^4.14.174",
     "@types/node": "^16.9.6",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
-    "rollup": "^2.57.0",
-    "rollup-plugin-sass": "^1.2.8",
-    "rollup-plugin-typescript2": "^0.30.0",
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "babel-eslint": "^10.1.0",
@@ -59,14 +58,27 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "gh-pages": "^3.2.3",
+    "lodash": "^4.17.21",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "^4.0.3",
+    "rollup": "^2.57.0",
+    "rollup-plugin-sass": "^1.2.8",
+    "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.4.3"
   },
   "files": [
     "dist"
   ],
-  "keywords": ["react", "components", "drillDown", "drilldown", "react-drilldown", "nested object", "nested modal", "modal"]
+  "keywords": [
+    "react",
+    "components",
+    "drillDown",
+    "drilldown",
+    "react-drilldown",
+    "nested object",
+    "nested modal",
+    "modal"
+  ]
 }
